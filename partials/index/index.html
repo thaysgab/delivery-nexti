@@ -1,0 +1,119 @@
+<main class="footercta" role="main">
+  <div class="container">
+    <div class="logo">
+      <h1></h1>
+    </div>
+    <br><br><br><br>
+
+    <img src="images/logo.png" />
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
+        <form class="form-horizontal" role="form" ng-submit="addUser()" id="subscribeForm" method="POST">
+          <div class="form-group">
+            <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
+              <input class="form-control input-lg" name="email" ng-model="email" type="email" id="address"
+              placeholder="Coloque seu e-mail aqui" data-validate="validate(required, email)" required="required"></input>
+            </div>
+
+            <div class="col-md-5 col-sm-4">
+              <button type="submit" class="btn btn-success btn-lg" translate="Se inscreva!"></button>
+            </div>
+          </div>
+          <div class="alert-success" translate="{{message}}"></div>
+        </form>
+        <span id="result" class="alertMsg"></span>
+      </div>
+    </div>
+
+    <a href="#explore" class="scrollSuave">
+      Saiba mais
+      <p class="scrollto--arrow">
+        <img src="images/scroll_down.png" alt="scroll down arrow" />
+      </p>
+    </a>
+</main>
+
+<div class="container">
+  <div class="section-title" id="explore">
+    <h2>Video demonstrativo</h2>
+    <a href="#funcionalidades" class="scrollSuave">
+      <h3 style="color: #384047;">Veja algumas funcionalidades</h3>
+    </a>
+  </div>
+
+  <div class="video-container">
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/RVmiArx7zdI"></iframe>
+  </div>
+  <div class="section-title" id="funcionalidades">
+    <h2>Funcionalidades</h2>
+  </div>
+
+  <section class="row features">
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/users.png" alt="analytics-icon">
+        <div class="caption">
+        <h3>Cadastro de usuário</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/categores.png" alt="analytics-icon">
+        <div class="caption">
+          <h3>Acesso a categorias</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/shopping-cart.png" alt="analytics-icon">
+        <div class="caption">
+          <h3>Carrinho</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row features">
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/map.png" alt="analytics-icon">
+        <div class="caption">
+          <h3>Selecionar endereço</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/checked.png" alt="analytics-icon">
+        <div class="caption">
+          <h3>Pedidos recebidos</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+      <img class="service-icon" src="images/edit.png" alt="analytics-icon">
+        <div class="caption">
+          <h3>Gerenciamento de produto</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <img class="service-icon" src="images/cutlery.png" alt="analytics-icon">
+          <div class="caption">
+            <h3>Produtos</h3>
+          </div>
+      </div>
+    </div>
+  </section>
+
+</div>
